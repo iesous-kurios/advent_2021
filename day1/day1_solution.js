@@ -22,12 +22,25 @@ function count_increase(input) {
             counter++;
         }
     }
-    console.log(counter);
     return counter;
 };
 
 
 
-console.log(count_increase(day1_data));
+console.log('Solution to part 1 is:', count_increase(day1_data));
 
+function count_increase_part2(input) {
+    // iterate through array, starting from second number, then add to a counter each time a group of three numbers
+    // is less than the next group of three numbers
+    // if the group of three numbers is less than the next group of three numbers, add to the counter
 
+    var counter = 0;
+    for (var i = 1; i < input.length; i++) {
+        if ((input[i-1] + input[i] + input[i+1]) < (input[i] + input[i+1] + input[i + 2])) {
+            counter++;
+        }
+    }
+    return counter;
+};
+
+console.log('Solution to part 2 is:', count_increase_part2(day1_data));
