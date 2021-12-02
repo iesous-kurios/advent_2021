@@ -10,16 +10,6 @@ numbers = day1_data[0]
 # and add to a list
 counting = 0
 
-# print each number in the list
-for i in day1_data[0]:
-    print(i)
-
-print(type(numbers))
-
-print(len(numbers))
-
-print(day1_data.shape)
-
 for i in range(0, len(numbers)-1):
     if numbers[i] < numbers[i+1]:
         counting += 1
