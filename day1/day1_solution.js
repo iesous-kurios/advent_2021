@@ -6,11 +6,6 @@ day1_data = text_input.getInputArray('day1.txt');
 
 
 
-// iterate through array, add to a counter each time a number is greater than previous number
-// if the number is greater than the previous number, add to the counter
-var counter = 0;
-
-
 // function that counts how many times a number is less than the next number
 // if the number is less than the next number, add to the counter
 function count_increase(input) {
